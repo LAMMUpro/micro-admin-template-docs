@@ -1,0 +1,15 @@
+{
+  "name": "kch-docs",
+  "version": "1.0.0",
+  "description": "科创海文档",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "vitepress": "^1.2.3"
+  },
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  }
+}

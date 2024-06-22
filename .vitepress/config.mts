@@ -3,8 +3,8 @@ import themeConfig from './themeConfig.mjs';
 
 /** [docs](https://vitepress.dev/reference/site-config) */
 export default defineConfig({
-  title: "前端开发文档",
-  description: "科创海前端开发文档",
+  title: "微前端后台模板",
+  description: "微前端后台模板",
   srcDir: './src',
   outDir: './dist',
   cacheDir: './.vite',

@@ -1,15 +1,20 @@
 {
-  "name": "kch-docs",
+  "name": "micro-admin-docs",
   "version": "1.0.0",
-  "description": "科创海文档",
+  "description": "微前端后台模板",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "vitepress": "^1.2.3"
+    "vitepress": "^1.2.3",
+    "fs-extra": "^10.0.0"
   },
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview --port 5152"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "@types/fs-extra": "^9.0.13"
   }
 }

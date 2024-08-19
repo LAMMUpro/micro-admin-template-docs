@@ -75,7 +75,7 @@ const themeConfig: UserConfig<DefaultTheme.Config>['themeConfig'] = {
   ],
   sidebar: sidebar,
   socialLinks: [
-    { icon: 'github', link: 'https://boshi.gitlab.com/vuejs/vitepress' }
+    { icon: 'github', link: 'https://github.com/LAMMUpro/micro-admin-template' }
   ]
 }
 

@@ -6,7 +6,7 @@ export default defineConfig({
   title: "微前端后台模板",
   description: "微前端后台模板",
   srcDir: './src',
-  outDir: './dist',
+  outDir: './build',
   cacheDir: './.vite',
   /** vite相关配置 */
   vite: {

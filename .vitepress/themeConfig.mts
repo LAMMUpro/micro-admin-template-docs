@@ -70,8 +70,9 @@ function getFirstRoute(sidebar: DefaultTheme.SidebarItem[]) {
 /** [docs](https://vitepress.dev/reference/default-theme-config) */
 const themeConfig: UserConfig<DefaultTheme.Config>['themeConfig'] = {
   nav: [
-    { text: 'Home', link: '/' },
-    { text: 'Docs', link: getFirstRoute(sidebar) },
+    { text: '首页', link: '/' },
+    { text: '文档', link: getFirstRoute(sidebar) },
+    { text: '更新历史', link: '/history' },
   ],
   sidebar: sidebar,
   socialLinks: [

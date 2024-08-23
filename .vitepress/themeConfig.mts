@@ -86,13 +86,41 @@ function getFirstRoute(sidebar: DefaultTheme.SidebarItem[]) {
 const themeConfig: UserConfig<DefaultTheme.Config>["themeConfig"] = {
   nav: [
     { text: "首页", link: "/" },
-    { text: "文档", link: getFirstRoute(sidebar) },
-    { text: "关于", items: [
-      {  text: '更新历史', link: "/About/history" },
-      {  text: '讨论群', link: "/About/discussion" },
-    ] },
+    { text: "文档", activeMatch: `^/Docs/`, link: getFirstRoute(sidebar) },
+    {
+      text: "关于",
+      activeMatch: `^/About/`,
+      items: [
+        { text: "更新历史", link: "/About/history" },
+        { text: "讨论群", link: "/About/discussion" },
+      ],
+    },
   ],
-  sidebar: sidebar,
+  /** sidebar用object指定前缀, 不要直接写array, 不然其它页面的上下页会有问题 */
+  sidebar: {
+    '/Docs/': [
+      { text: "1.指南", items: [{ text: "介绍", link: "/Docs/1.指南/介绍.md" }] },
+      { text: "2.基础功能", items: [] },
+      {
+        text: "3.封装特性",
+        items: [
+          { text: "子应用独 立调试", link: "/Docs/3.封装特性/子应用独立调试.md" },
+          {
+            text: "组件共享方案1-应用嵌套",
+            link: "/Docs/3.封装特性/组件共享方案1-应用嵌套.md",
+          },
+          {
+            text: "组件共享方案2-跨应用渲染",
+            link: "/Docs/3.封装特性/组件共享方案2-跨应用渲染.md",
+          },
+        ],
+      },
+      {
+        text: "常见问题总结",
+        items: [{ text: "常见问题", link: "/Docs/常见问题总结/常见问题.md" }],
+      },
+    ]
+  },
   socialLinks: [
     {
       icon: "github",

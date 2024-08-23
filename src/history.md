@@ -1,3 +1,9 @@
+---
+sidebar: false
+footer: false
+prev: false
+---
+
 # 更新历史
 
 ## 1.1.0（开发中）

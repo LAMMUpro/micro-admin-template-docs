@@ -9,10 +9,13 @@ hero:
   actions:
     - theme: alt
       text: 快速开始
-      link: /1.指南/介绍
+      link: /Docs/1.指南/介绍
     - theme: brand
       text: 常见问题总结
-      link: /常见问题总结/常见问题
+      link: /Docs/常见问题总结/常见问题
+    - theme: alt
+      text: 历史更新
+      link: /history
 
 features:
   - title: 项目拆分

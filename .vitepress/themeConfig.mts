@@ -93,7 +93,7 @@ const themeConfig: UserConfig<DefaultTheme.Config>["themeConfig"] = {
       activeMatch: `^/About/`,
       items: [
         { text: "更新历史", link: "/About/history" },
-        { text: "讨论群", link: "/About/discussion" },
+        { text: "加入社区", link: "/About/discussion" },
       ],
     },
   ],

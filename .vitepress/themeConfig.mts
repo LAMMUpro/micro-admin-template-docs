@@ -30,7 +30,7 @@ function generateCatalog(
   /** 目录名 / 文件名 */
   name: string,
   /** 前缀（相对于_path后的） */
-  _prefix: string = "/Docs/"
+  _prefix: string = "/Docs"
 ) {
   const prefix = `${_prefix}/${name}`;
   /** name是文件名 */

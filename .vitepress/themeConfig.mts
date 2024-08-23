@@ -87,7 +87,10 @@ const themeConfig: UserConfig<DefaultTheme.Config>["themeConfig"] = {
   nav: [
     { text: "首页", link: "/" },
     { text: "文档", link: getFirstRoute(sidebar) },
-    { text: "更新历史", link: "/history" },
+    { text: "关于", items: [
+      {  text: '更新历史', link: "/About/history" },
+      {  text: '讨论群', link: "/About/discussion" },
+    ] },
   ],
   sidebar: sidebar,
   socialLinks: [

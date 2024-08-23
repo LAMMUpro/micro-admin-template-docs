@@ -15,7 +15,7 @@ hero:
       link: /Docs/常见问题总结/常见问题
     - theme: alt
       text: 历史更新
-      link: /history
+      link: /About/history
 
 features:
   - title: 项目拆分

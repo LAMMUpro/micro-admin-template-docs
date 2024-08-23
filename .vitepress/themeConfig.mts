@@ -87,6 +87,7 @@ const themeConfig: UserConfig<DefaultTheme.Config>["themeConfig"] = {
   nav: [
     { text: "首页", link: "/" },
     { text: "文档", activeMatch: `^/Docs/`, link: getFirstRoute(sidebar) },
+    { text: "在线demo", link: "https://micro-admin-template.lammu.cn/micromain/" },
     {
       text: "关于",
       activeMatch: `^/About/`,

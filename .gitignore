@@ -64,3 +64,6 @@ components.d.ts
 .vitepress/*
 !.vitepress/config.mts
 !.vitepress/themeConfig.mts
+
+# obsidian 软件配置
+obsidian/.obsidian

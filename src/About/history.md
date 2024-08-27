@@ -7,6 +7,8 @@ prev: false
 # 更新历史
 
 ## 1.2.0（排期中）
+- 项目解耦
+  - 将micro-app-utils独立成一个npm库
 - 动态菜单
 
 ## 1.1.0（开发中）
@@ -16,7 +18,9 @@ prev: false
   - 派发组件优化
 - [wwj]主应用支持将Element组件注册成派发组件(按需加载)
 - [cyc]vue2子应用
+  - 路由
 - [cyc]vue3子应用
+  - 路由
 - [cyc]线上demo
 
 ## 1.0.0

@@ -14,6 +14,7 @@ prev: false
   - 接入路由
     - 路由拦截
   - 派发组件优化
+- [wwj]主应用支持将Element组件注册成派发组件(按需加载)
 - [cyc]vue2子应用
 - [cyc]vue3子应用
 - [cyc]线上demo

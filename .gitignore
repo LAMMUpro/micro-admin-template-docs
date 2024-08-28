@@ -67,3 +67,6 @@ components.d.ts
 
 # obsidian 软件配置
 obsidian/.obsidian
+
+# 忽略idea编译文件
+.idea

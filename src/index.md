@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "micro-admin docs"
   text: "微后台模板（集成微前端）"
-  tagline: 集成京东micro-app微前端框架的后台模板，支持vue3/vue2/react等子应用
+  tagline: 集成京东micro-app微前端框架的后台模板，支持vue3/vue2/react等框架
   actions:
     - theme: alt
       text: 快速开始

@@ -1,12 +1,9 @@
 {
 	"nodes":[
-		{"id":"2dd09561b490b652","type":"text","text":"子应用路由 且 链接未处于编码状态","x":1015,"y":570,"width":250,"height":60,"color":"5"},
 		{"id":"c8891977fa0f4cdb","type":"text","text":"token不存在 且 to.path不是/login","x":-920,"y":147,"width":219,"height":86},
 		{"id":"b02643da77ca0e89","type":"text","text":"重置store\n","x":-667,"y":40,"width":143,"height":60},
 		{"id":"427253d13bc9f8d9","type":"text","text":"跳转到login页","x":-693,"y":-220,"width":195,"height":50,"color":"2"},
 		{"id":"1e6c708bc398ca0b","type":"text","text":"暂存当前路由","x":-678,"y":-87,"width":165,"height":50},
-		{"id":"bed31c7416c6f198","type":"text","text":"router.beforeEach ","x":-1280,"y":100,"width":250,"height":60},
-		{"id":"b556df01e163dce1","type":"text","text":"是否是不知名路由\n(to.name === undefined || to.path === '/')","x":-536,"y":250,"width":436,"height":70},
 		{"id":"ea26f6262b754947","type":"text","text":"跳转到login页","x":39,"y":-162,"width":172,"height":50,"color":"2"},
 		{"id":"3a700a4af3b786c5","type":"text","text":"获取用户信息","x":116,"y":10,"width":191,"height":60},
 		{"id":"08984d05079a522d","type":"text","text":"获取用户菜单","x":360,"y":-110,"width":250,"height":60},
@@ -34,7 +31,10 @@
 		{"id":"70d7df310a0eb20e","type":"text","text":"正常跳转next()","x":2145,"y":968,"width":250,"height":60,"color":"2"},
 		{"id":"712232ef746fb99c","type":"text","text":"router.afterEach","x":1780,"y":998,"width":250,"height":60},
 		{"id":"d9435212285aacdf","type":"text","text":"根据路由名动态设置文档的标题","x":1480,"y":1028,"width":186,"height":72},
-		{"id":"ef74e68bb1046775","type":"text","text":"const routerTo = {\n  path: string,\n  query: BaseObj<string>\n}","x":-400,"y":-680,"width":260,"height":120,"color":"4"}
+		{"id":"ef74e68bb1046775","type":"text","text":"const routerTo = {\n  path: string,\n  query: BaseObj<string>\n}","x":-400,"y":-680,"width":260,"height":120,"color":"4"},
+		{"id":"2dd09561b490b652","type":"text","text":"子应用路由 且 \n链接未处于编码状态","x":926,"y":510,"width":250,"height":60},
+		{"id":"bed31c7416c6f198","type":"text","text":"router.beforeEach ","x":-1320,"y":117,"width":250,"height":60},
+		{"id":"b556df01e163dce1","type":"text","text":"是否是不知名路由\n(to.name \\=== undefined || to.path === '/')","x":-540,"y":233,"width":444,"height":70}
 	],
 	"edges":[
 		{"id":"bd5c13e39467ee32","fromNode":"c8891977fa0f4cdb","fromSide":"right","toNode":"b02643da77ca0e89","toSide":"bottom","label":"是"},

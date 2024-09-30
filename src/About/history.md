@@ -47,7 +47,7 @@ prev: false
   - sass ✔
   - router ✔
   - 公共组件 ✔
-    - svg-icon ✔
+    - use-svg ✔
   - Prettier 文件格式化(需要 vscode 安装 Prettier) ✔
   - eslint 代码规范(需要 vscode 安装 ESLint 2.4.4) ✔
   - element-plus (组件及样式按需引入) ✔

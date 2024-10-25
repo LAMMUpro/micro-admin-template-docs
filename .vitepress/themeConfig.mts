@@ -10,8 +10,10 @@ const dirList = fse
   .readdirSync("./src/Docs")
   .filter(
     (name) =>
-      fse.statSync(path.resolve("./src/Docs", name)).isDirectory() ||
-      name.endsWith(".md")
+      /** 过滤掉_前缀的目录 */
+      (!name.startsWith("_") &&
+        (fse.statSync(path.resolve("./src/Docs", name)).isDirectory()) ||
+        name.endsWith(".md"))
   );
 
 /**
@@ -32,6 +34,8 @@ function generateCatalog(
   /** 前缀（相对于_path后的） */
   _prefix: string = "/Docs"
 ) {
+  
+  if (name.startsWith('_')) return;
   const prefix = `${_prefix}/${name}`;
   /** name是文件名 */
   if (fse.statSync(path.resolve(_path, name)).isFile()) {
@@ -46,7 +50,10 @@ function generateCatalog(
       items: fse
         .readdirSync(path.resolve(_path, name))
         .map((_name) => {
+          /** 过滤掉_前缀的目录 */
+          if (_name.startsWith("_")) return;
           if (fse.statSync(path.resolve(_path, name, _name)).isFile()) {
+            
             // 处理文件
             if (_name.endsWith(".md")) {
               const name_without_type = _name.slice(0, -3);
@@ -85,11 +92,14 @@ function getFirstRoute(sidebar: DefaultTheme.SidebarItem[]) {
 /** [docs](https://vitepress.dev/reference/default-theme-config) */
 const themeConfig: UserConfig<DefaultTheme.Config>["themeConfig"] = {
   /** 左上角图标 */
-  logo: '/favicon.ico',
+  logo: "/favicon.ico",
   nav: [
     { text: "首页", link: "/" },
     { text: "文档", activeMatch: `^/Docs/`, link: getFirstRoute(sidebar) },
-    { text: "🔗在线demo", link: "https://micro-admin-template.lammu.cn/micromain/introduce" }, // 跳到介绍页
+    {
+      text: "🔗在线demo",
+      link: "https://micro-admin-template.lammu.cn/micromain/introduce",
+    }, // 跳到介绍页
     {
       text: "关于",
       activeMatch: `^/About/`,
@@ -101,7 +111,7 @@ const themeConfig: UserConfig<DefaultTheme.Config>["themeConfig"] = {
   ],
   /** sidebar用object指定前缀, 不要直接写array, 不然其它页面的上下页会有问题 */
   sidebar: {
-    '/Docs/': sidebar
+    "/Docs/": sidebar,
   },
   socialLinks: [
     {

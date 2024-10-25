@@ -26,20 +26,29 @@ hero:
 features:
   - icon:
       src: /svgs/Vue.svg
-    title: 项目拆分
-    details: 单一项目可拆分成多个子应用，子应用可使用不同技术栈
+    title: Vue3
+    details: 优先支持Vue3 / Vue2 / React18, 主应用使用的是Vue3
   - icon:
-      src: /svgs/React.svg
+      src: /svgs/Vite.svg
+    title: Vite
+    details: 优先支持Vite / webpack, 主应用使用的是Vite
+  - icon:
+      src: /favicon.ico
+    title: MicroApp
+    details: 使用京东微前端框架，更稳定，支持特性更多
+  - icon:
+      src: /svgs/JS.svg
+    title: 项目拆分
+    details: 单一项目可拆分成多个子应用，减少单模块代码体积，子应用可使用不同技术栈，方便集成其它技术栈应用
+  - icon:
+      src: /svgs/RouterComponent.svg
     title: 组件共享1-路由组件
     details: 利用微前端支持应用嵌套的特性，将组件注册成路由供其它应用使用（跨框架组件）
   - icon:
-      src: /svgs/Vite.svg
+      src: /svgs/DispatchComponent.svg
     title: 组件共享2-派发组件
-    details: 利用主应用可访问子应用dom的特性，通过事件通知主应用向下“派发”组件（跨框架组件）
-  - icon:
-      src: /svgs/Webpack.svg
-    title: 333333
-    details: 利用主应用可访问子应用dom的特性，通过事件通知主应用向下“派发”组件（跨框架组件）
+    details: 利用微前端支持应用嵌套的特性，将组件注册成路由供其它应用使用（跨框架组件）
+  
 ---
 
 

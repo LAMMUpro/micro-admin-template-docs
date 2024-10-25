@@ -91,6 +91,10 @@ function getFirstRoute(sidebar: DefaultTheme.SidebarItem[]) {
 
 /** [docs](https://vitepress.dev/reference/default-theme-config) */
 const themeConfig: UserConfig<DefaultTheme.Config>["themeConfig"] = {
+  /** 启用本地搜索 */
+  search: {
+    provider: 'local',
+  },
   /** 左上角图标 */
   logo: "/favicon.ico",
   nav: [

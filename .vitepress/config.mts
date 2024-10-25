@@ -8,6 +8,10 @@ export default defineConfig({
   srcDir: './src',
   outDir: './build',
   cacheDir: './.vite',
+  /** 网页favicon */
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+  ],
   /** vite相关配置 */
   vite: {
     server: {

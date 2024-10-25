@@ -84,10 +84,12 @@ function getFirstRoute(sidebar: DefaultTheme.SidebarItem[]) {
 
 /** [docs](https://vitepress.dev/reference/default-theme-config) */
 const themeConfig: UserConfig<DefaultTheme.Config>["themeConfig"] = {
+  /** 左上角图标 */
+  logo: '/favicon.ico',
   nav: [
     { text: "首页", link: "/" },
     { text: "文档", activeMatch: `^/Docs/`, link: getFirstRoute(sidebar) },
-    { text: "在线demo", link: "https://micro-admin-template.lammu.cn/micromain/" },
+    { text: "🔗在线demo", link: "https://micro-admin-template.lammu.cn/micromain/introduce" }, // 跳到介绍页
     {
       text: "关于",
       activeMatch: `^/About/`,

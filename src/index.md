@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: alt
       text: ⚡快速开始
-      link: /Docs/1.指南/介绍
+      link: /Docs/1.指南/微前端介绍
     - theme: brand
       text: 🐛常见问题总结
       link: /Docs/常见问题总结/常见问题
@@ -20,7 +20,7 @@ hero:
       text: 🚧历史更新
       link: /About/history
     - theme: brand
-      text: 🔗在线demo
+      text: 🔗在线预览
       link: https://micro-admin-template.lammu.cn/micromain/introduce
 
 features:

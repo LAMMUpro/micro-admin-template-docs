@@ -101,7 +101,7 @@ const themeConfig: UserConfig<DefaultTheme.Config>["themeConfig"] = {
     { text: "首页", link: "/" },
     { text: "文档", activeMatch: `^/Docs/`, link: getFirstRoute(sidebar) },
     {
-      text: "🔗在线demo",
+      text: "🔗在线预览",
       link: "https://micro-admin-template.lammu.cn/micromain/introduce",
     }, // 跳到介绍页
     {

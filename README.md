@@ -6,4 +6,5 @@
 
 建议使用Typora编辑/预览.md文件
 
-## 测试
+# 安装依赖（忽略版本冲突）主目录下运行, 会安装packages/*下项目的所有依赖
+yarn install --ignore-engines

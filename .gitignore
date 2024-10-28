@@ -1,38 +1,27 @@
 # 缓存文件
 .cache
-.cache
 # serveless缓存
 .s
-.s
 # 编译产物
-build
-build
+build/*
 # 编译产物
-build_*
-build_*
+build_*/*
 # 编译产物
 dist
 target
 # 第三方包
 node_modules
-node_modules
 # yarn版本锁定
-yarn.lock
 yarn.lock
 # pnpm版本锁定
 pnpm-lock.yaml
-pnpm-lock.yaml
 # package版本锁定
-package-lock.json
 package-lock.json
 # 生成的文档
 swagger.yaml
-swagger.yaml
 # 后端配置文件
 .env
-.env
 # 后端配置文件
-.env.*
 .env.*
 #日志文件
 logs

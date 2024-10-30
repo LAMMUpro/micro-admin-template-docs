@@ -11,6 +11,7 @@ prev: false
   - 升级react版本到18
   - 升级antd版本到5
   - 结合antd / element plus组件?
+- 路由组件支持方法调用
 
 ## 1.2.0（开发中）
 - 用户系统 / 权限控制

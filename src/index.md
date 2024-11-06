@@ -25,6 +25,10 @@ hero:
 
 features:
   - icon:
+      src: /svgs/UnoCSS.svg
+    title: UnoCSS
+    details: 样式兼容移动端
+  - icon:
       src: /svgs/Vue.svg
     title: Vue3
     details: 优先支持Vue3 / Vue2 / React18, 主应用使用的是Vue3
